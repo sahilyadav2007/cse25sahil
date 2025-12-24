@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gradient Text Effect</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #111;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        background: linear-gradient(90deg, #ff6f61, #ff9a9e, #6a11cb, #2575fc);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientMove 5s ease infinite;
+        transition: transform 0.3s ease;
+    }
+
+    h1:hover {
+        transform: scale(1.1);
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+</style>
+</head>
+<body>
+    <h1>Gradient Magic</h1>
+</body>
+</html>
+``
