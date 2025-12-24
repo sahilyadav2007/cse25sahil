@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            padding: 40px;
+        }
+        .pricing-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .pricing-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .price {
+            font-size: 36px;
+            color: #333;
+            margin: 20px 0;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .features li {
+            padding: 8px 0;
+        }
+        .btn {
+            background: #3498db;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h3>Basic</h3>
+            <div class="price">$9</div>
+            <ul class="features">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <button class="btn">Choose Plan</button>
+        </div>
+        <div class="pricing-card">
+            <h3>Pro</h3>
+            <div class="price">$19</div>
+            <ul class="features">
+                <li>All Basic Features</li>
+                <li>Feature 4</li>
+                <li>Feature 5</li>
+            </ul>
+            <button class="btn">Choose Plan</button>
+        </div>
+    </div>
+</body>
+</html>
