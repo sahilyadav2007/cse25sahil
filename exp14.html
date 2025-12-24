@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #f5f5f5;
+        }
+        .timeline {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #3498db;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 70px;
+            margin-bottom: 40px;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: 21px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #3498db;
+            border: 3px solid white;
+        }
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .timeline-content h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .timeline-date {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Project Timeline</h1>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Project Started</h3>
+                <p class="timeline-date">January 2025</p>
+                <p>Initial planning and requirements gathering phase.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Development Phase</h3>
+                <p class="timeline-date">March 2025</p>
+                <p>Core functionality development and testing.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Launch</h3>
+                <p class="timeline-date">June 2025</p>
+                <p>Official product launch and deployment.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
